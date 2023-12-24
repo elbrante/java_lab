@@ -1,0 +1,23 @@
+### Добавить отель
+
+POST localhost:8081/api/hotels?api-key=hotels-key
+Content-Type: application/json
+
+{
+  "title": "Отель 1",
+  "address": "улица 1",
+  "city": "Казань",
+  "rooms" : 10
+}
+
+
+### Получить список отелей
+
+GET localhost:8081/api/hotels?api-key=hotels-key&page=1
+
+
+### Получить список отелей в городе Казань
+
+GET localhost:8081/api/hotels/city?api-key=hotels-key&page=0&city=Казань
+
+
