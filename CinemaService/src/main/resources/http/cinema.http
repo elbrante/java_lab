@@ -1,0 +1,20 @@
+
+
+### Добавить кинотеатр
+
+POST localhost:8080/api/cinemas?api-key=cinema-key
+Content-Type: application/json
+
+{
+  "title": "Кинотеатр 1",
+  "address": "улица 1",
+  "city": "Казань"
+}
+### Получить список кинотеатров
+
+GET localhost:8080/api/cinemas?api-key=cinema-key&page=0
+
+
+### Получение кинотеатров в городе Казань
+
+GET localhost:8080/api/cinemas?api-key=cinema-key&page=0&city="Казань"
